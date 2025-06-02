@@ -112,9 +112,14 @@ const Formulario = ({ mensaje, productosSeleccionados: propsProductosSeleccionad
     setErrors({});
     setEnviado(false);
     setProductosSeleccionados([]);
-    // Refresca la página pero mantiene la posición usando scrollTo
-    window.location.hash = "#contacto-inicio";
-    window.location.reload();
+    // Al limpiar, también actualiza el estado de navegación para que los productos vuelvan a estar disponibles
+    navigate(location.pathname, {
+      replace: true,
+      state: {
+        ...location.state,
+        productosSeleccionados: [],
+      },
+    });
   };
 
   // Elimina un producto seleccionado

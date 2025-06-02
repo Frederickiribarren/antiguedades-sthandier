@@ -40,7 +40,7 @@ function Home() {
 
     return (
         // Contenedor principal con margen superior para compensar el AppBar fijo
-        <div>
+        <div className="container">
             {/* Muestra el encabezado */}
             <Header />
             {/* Contenido principal que ocupa el espacio restante */}
