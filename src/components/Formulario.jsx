@@ -143,7 +143,7 @@ const Formulario = ({ mensaje, productosSeleccionados: propsProductosSeleccionad
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "60vh",
+        minHeight: "80vh",
         mt: { xs: 10, md: 14 }, // Aumenta el margen superior para evitar que el navbar lo tape
         mb: 4,
         background: "linear-gradient(135deg, #efebe9 0%, #d7ccc8 100%)",

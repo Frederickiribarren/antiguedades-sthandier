@@ -148,10 +148,23 @@ const Header = () => {
                 color: "#6d4c41",
                 fontWeight: 700,
                 letterSpacing: 1,
-                textShadow: "0 2px 8px rgba(121,85,72,0.08)"
+                textShadow: "0 2px 8px rgba(121,85,72,0.08)",
+                display: { xs: "none", md: "block" }
               }}
             >
               Antigüedades Sthandier
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                color: "#6d4c41",
+                fontWeight: 700,
+                letterSpacing: 1,
+                textShadow: "0 2px 8px rgba(121,85,72,0.08)",
+                display: { xs: "block", md: "none" }
+              }}
+            >
+              Sthandier
             </Typography>
           </Box>
           {/* Menú de navegación para pantallas grandes */}

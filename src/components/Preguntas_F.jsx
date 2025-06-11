@@ -37,10 +37,10 @@ export default function PreguntasF() {
           width: "100%",
           maxWidth: 1200,
           mx: "auto",
-          minHeight: { xs: "60vh", md: "70vh" },
+          minHeight: { xs: "auto", md: "70vh" },
           gap: { xs: 2, md: 6 },
-          mt: { xs: 6, md: 10 },
-          mb: { xs: 2, md: 4 },
+          mt: 0, // Sin margen superior
+          mb: { xs: 1, md: 0 },
         }}
       >
         {/* Título principal de la sección de preguntas frecuentes */}
@@ -65,7 +65,6 @@ export default function PreguntasF() {
         {/* Contenedor de los acordeones, centrado y con ancho fijo */}
         <Box
           sx={{
-            width: "100%",
             maxWidth: 600,
             background: "linear-gradient(135deg, #efebe9 0%, #d7ccc8 100%)",
             borderRadius: "24px",
